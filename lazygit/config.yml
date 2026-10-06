@@ -1,0 +1,6 @@
+customCommands:
+  - key: 'U'
+    context: 'submodules'
+    command: 'git -C "{{.SelectedSubmodule.Path}}" pull'
+    description: 'Pull active branch for selected submodule'
+    output: terminal
