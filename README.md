@@ -23,3 +23,11 @@ lazyvim configs:
 ```
 ~/.config/lazygit/
 ```
+
+opencode configs:
+
+```
+~/.config/opencode/opencode.json
+
+/etc/opencode/opencode.json
+```
