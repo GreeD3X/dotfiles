@@ -1,0 +1,40 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "providers": {
+    "llama-cpp": {
+      "name": "llama.cpp (self-hosted)",
+      "package": "@opencode/ai/providers/openai-compatible",
+      "env": ["LLAMA_API_KEY"],
+      "settings": {
+        "baseURL": "http://10.8.0.4:9931/v1",
+      },
+      "options": {
+        "reasoningEffort": "xhigh",
+      },
+      "models": {
+        "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF:Q3_K_XL": {
+          "name": "Qwen3 Coder 30B A3B Q3_K_XL"
+        },
+        "unsloth/Qwen3.8-27B-GGUF:Q3_K_XL": {
+          "name": "unsloth/Qwen3.8-27B-GGUF:Q3_K_XL"
+        },
+        "unsloth/Qwen3.8-27B-GGUF:Q4_K_M": {
+	  "name": "unsloth/Qwen3.8-27B-GGUF:Q4_K_M"
+	},
+	"unsloth/Qwen3.8-27B-GGUF:IQ4_XS": {
+	  "name": "unsloth/Qwen3.8-27B-GGUF:IQ4_XS"
+        },
+	"unsloth/Qwen3.8-27B-GGUF:Q4_K_S": {
+	  "name": "unsloth/Qwen3.8-27B-GGUF:Q4_K_S"
+	},
+	"ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF:IQ3_S": {
+	  "name": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF:IQ3_S",
+          "limit": {
+            "context": 111072,
+            "output": 100000,
+          },
+	}
+      }
+    }
+  }
+}
